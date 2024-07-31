@@ -6,6 +6,7 @@
     <title>Renmao Tian - Personal Page</title>
     <link rel="icon" href="photo1.jpg" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.2.2/wordcloud2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -32,31 +33,83 @@
             width: 128px;
             height: 128px;
             border-radius: 50%;
-            margin-right: 13px;
+            margin-right: 20px;
         }
         .profile-info {
             text-align: left;
         }
         .profile-info h1 {
-            font-size: 1.2rem;
+            font-size: 2rem;
             font-weight: bold;
             margin: 0 0 10px 0;
         }
         .profile-info p {
             margin: 2px 0;
-			font-size: 0.9rem;
+            font-size: 1rem;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 20px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+        .profile-info {
+            text-align: left;
+        }
+        .profile-info h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+        }
+        .profile-info p {
+            margin: 2px 0;
+            font-size: 1rem;
         }
         .slideshow-container {
             position: relative;
             width: 100%;
             max-width: 600px;
             margin: auto;
+            height: 400px;
+            overflow: hidden;
+            background-color: #f0f0f0;
         }
         .slide {
             display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background-color: #f0f0f0;
         }
         .slide.active {
             display: block;
+        }
+        .slideshow-nav {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .slideshow-nav button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin: 0 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .slideshow-nav button:hover {
+            background-color: #1e40af;
         }
         h2 {
             font-size: 1.875rem;
@@ -103,9 +156,13 @@
                 <img src="photo1.jpg" alt="Renmao Tian" class="profile-image">
                 <div class="profile-info">
                     <h1>Renmao "Tim" Tian, Ph.D.</h1>
-                    <p style="font-size: 1.2rem;">Research Scientist</p>
-                    <p>Institute for Food Safety and Health, Illinois Institute of Technology</p>
-                    <p>Email: tianrenmao@gmail.com | Tel: +1 7089454461</p>
+                    <p style="font-size: 1.5rem;">Research Scientist</p>
+                    <p>Illinois Institute of Technology</p>
+                    <p>Email: tianrenmao@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/renmao-tian-53198a1b0/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://scholar.google.com/citations?user=3NdJzc4AAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -115,7 +172,7 @@
 	    <section id="research-interests">
             <h2>Research Interests</h2>
             <p>
-                My research focuses on developing innovative bioinformatics tools, pipelines, and machine learning algorithms to advance the understanding of microbial genomics and its applications in human health and the environment. I am particularly interested in leveraging my expertise in next-generation sequencing data analysis, comparative genomics, and machine learning to develop novel approaches for investigating microbial diversity, evolution, and pathogenesis.
+                My research focuses on developing and applying innovative bioinformatics tools and machine learning models to advance the understanding of microbial genomics and improve human health and the environment leveraging next-generation sequencing and big data.
             </p>
             <div id="wordcloud" style="width: 100%; height: 300px;"></div>
         </section>
@@ -130,11 +187,10 @@
                 <li>Machine Learning</li>
             </ul>
             
-            <h3>Qualifications Summary</h3>
+            <h3>Summary</h3>
             <ul>
                 <li><p><b>Interdisciplinary Background</b>: Ph.D. in Microbial Genomics with extensive experience in bioinformatics. Expert in NGS data analysis, machine learning, and development of bioinformatics tools.</p></li>
                 <li><p><b>Research Excellence</b>: Published 70+ papers in reputed journals with total citation of 3400. Notable publications in Microbiome (IF 15, citation 250).</p></li>
-                <li><p><b>Teaching and Mentorship</b>: Extensive experience teaching Microbiology courses at undergraduate and graduate levels. Supervised and mentored graduate students.</p></li>
                 <li><p><b>Editorship in Journals</b>: Academic Editor in the journal <i>Microorganisms</i>. Research Topic Editor in the journal <i>Frontiers in Microbiology</i>.</p></li>
                 <li><p><b>Management of Facilities</b>: Maintaining sequencers (Illumina MiSeq and NextSeq), high-performance computer (HPC) facilities and bioinformatics web servers.</p></li>
             </ul>
@@ -142,7 +198,7 @@
             <h3>Education</h3>
             <ul>
                 <li><b>Ph.D. in Microbial Genomics</b>, Hong Kong University of Science and Technology (2011-2015)</li>
-				<p>Genomic and Metagenomic sequencing of microbiomes from marine environments. Bioinformatics analysis on genomic sequence data.</p>
+				<p>Genomic and Metagenomic sequencing and analysis of microbiomes from marine environments.</p>
                 <li><b>M.Sc. in Microbiology</b>, Beijing Institute of Microbiology and Epidemiology (2008-2011)</li>
 				<p>Genomics and evolution of bacterial pathogens for human diseases.</p>
                 <li><b>B.Sc. in Biological Science</b>, Ludong University (2004-2008)</li>
@@ -152,25 +208,29 @@
             <ul>
                 <li><b>Research Scientist</b>, High Throughput Sequencing (HTS) Initiative, Institute for Food Safety and Health, Illinois Institute of Technology (2019-Present)</li>
 				<p>Focusing on developing bioinformatics tools, pipelines and machine learning tools; Investigating bacterial pathogenesis for human diseases. Maintaining sequencing and bioinformatics facilities.</p>
-				<p><u>Key projects:</u> (1) Bioinformatics tools and Galaxy server (<a href="https://hts.iit.edu/galaxy">https://hts.iit.edu/galaxy</a>) for genomic data analysis, including amplicon sequence (ASAP 2), phylogenomics (VBCG) and plasmid prediction (PlasmidHunter), etc; (2) ML-MSE: A machine learning-assisted technology for targeted bacterial isolation; (3) Ecology and evolution of bacterial pathogens for human diseases. (4) Applying for grants of machine learning applications in bioinformatics.</p>
                 <li><b>Postdoctoral Research Associate</b>, Institute for Environmental Genomics, University of Oklahoma (2016-2019)</li>
 				<p>Conducted bioinformatics analysis on genomes and metagenomes of environmental microbiomes. Developed automatic bioinformatics pipelines for amplicon, genome, and metagenome sequence data analysis.</p>
             </ul>
+			<h3>Publications</h3>
+			<p>In fields of Microbiology, Genomics, and Bioinformatics. Total citation: 3400. H-index: 34. <a href="https://scholar.google.com/citations?user=3NdJzc4AAAAJ&hl=en"><b>Google Scholar</b></a></p>
         </section>
-
+		
         <section id="current-lab">
             <h2>Current Lab</h2>
             <p>
-                Our lab at the High Throughput Sequencing Initiative (HTSI), Institute for Food Safety and Health, Illinois Institute of Technology, mainly focuses on microbiological research and bioinformatics tool development. We are interested in applying AI and machine learning in solving biological problems using big data.
+                Our lab is called <b>High Throughput Sequencing Initiative (HTSI)</b>, affilicated with the Institute for Food Safety and Health, Illinois Tech. We mainly focuses on microbiological research and bioinformatics tool development. We are interested in applying AI and machine learning in solving biological problems using big data.
             </p>
+			<p>Please feel free if you have any comments on our ongoing projects or any ideas that we can collaborate on. We will be very happy to discuss on it.</p>
+			
+			<h3>Lab Members</h3>
             <div style="display: flex; justify-content: space-around; margin-bottom: 2rem;">
                 <div style="text-align: center;">
-                    <img src="/api/placeholder/200/200" alt="Behzad Imanian" style="border-radius: 50%; width: 128px; height: 128px; margin-bottom: 0.5rem;">
+                    <img src="picture_BI.png" alt="Behzad Imanian" style="border-radius: 10%; height: 200px; margin-bottom: 0.5rem;">
                     <p style="font-weight: 600;">Behzad Imanian, PhD</p>
-                    <p>Research Assistant Professor</p>
+                    <p>Research Assistant Professor, Lead</p>
                 </div>
                 <div style="text-align: center;">
-                    <img src="/api/placeholder/200/200" alt="Renmao Tian" style="border-radius: 50%; width: 128px; height: 128px; margin-bottom: 0.5rem;">
+                    <img src="picture_RT.jpg" alt="Renmao Tian" style="border-radius: 10%; height: 200px; margin-bottom: 0.5rem;">
                     <p style="font-weight: 600;">Renmao "Tim" Tian, PhD</p>
                     <p>Research Scientist</p>
                 </div>
@@ -178,89 +238,89 @@
             
             <h3>Project Highlights</h3>
             
-            <div class="project-card">
-                <h4>PlasmidHunter</h4>
-                <p>PlasmidHunter is a tool for accurate and fast prediction of plasmid sequences using gene content profile and machine learning.</p>
-                <div class="slideshow-container">
-                    <img src="/api/placeholder/600/400" alt="PlasmidHunter 1" class="slide active">
-                    <img src="/api/placeholder/600/400" alt="PlasmidHunter 2" class="slide">
-                    <img src="/api/placeholder/600/400" alt="PlasmidHunter 3" class="slide">
-                    <img src="/api/placeholder/600/400" alt="PlasmidHunter 4" class="slide">
-                </div>
-                <div style="text-align: center; margin-top: 0.5rem;">
-                    <a href="#" style="color: #2563eb; text-decoration: none;">Read the paper</a>
-                </div>
-            </div>
+			<div class="project-card">
+				<h4>PlasmidHunter</h4>
+				<p>PlasmidHunter is a tool for accurate and fast prediction of plasmid sequences using gene content profile and machine learning.</p>
+				<div class="slideshow-container">
+					<img src="plasmidhunter_1.jpeg" alt="PlasmidHunter 1" class="slide active">
+					<img src="plasmidhunter_2.jpeg" alt="PlasmidHunter 2" class="slide">
+					<img src="plasmidhunter_3.jpeg" alt="PlasmidHunter 3" class="slide">
+					<img src="plasmidhunter_4.jpeg" alt="PlasmidHunter 4" class="slide">
+					<div class="slideshow-nav">
+						<button class="prev">&#10094;</button>
+						<button class="next">&#10095;</button>
+					</div>
+				</div>
+				<div style="text-align: center; margin-top: 0.5rem;">
+					<a href="https://academic.oup.com/bib/article/25/4/bbae322/7705531" style="color: #2563eb; text-decoration: none;">Read the paper</a>
+				</div>
+			</div>
+
+			<div class="project-card">
+				<h4>VBCG</h4>
+				<p>VBCG is a tool for phylogenomic analysis using 20 validated bacterial core genes with high fidelity and resolution.</p>
+				<div class="slideshow-container">
+                   <img src="vbcg_1.jpeg" alt="VBCG 1" class="slide active">
+                    <img src="vbcg_2.jpeg" alt="VBCG 2" class="slide">
+                    <img src="vbcg_3.jpeg" alt="VBCG 3" class="slide">
+                    <img src="vbcg_4.jpeg" alt="VBCG 4" class="slide">
+					<div class="slideshow-nav">
+						<button class="prev">&#10094;</button>
+						<button class="next">&#10095;</button>
+					</div>
+				</div>
+				<div style="text-align: center; margin-top: 0.5rem;">
+					<a href="https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-023-01705-9" style="color: #2563eb; text-decoration: none;">Read the paper</a>
+				</div>
+			</div>            
             
-            <div class="project-card">
-                <h4>VBCG</h4>
-                <p>VBCG is a tool for phylogenomic analysis using 20 validated bacterial core genes with high fidelity and resolution.</p>
-                <div class="slideshow-container">
-                    <img src="/api/placeholder/600/400" alt="VBCG 1" class="slide active">
-                    <img src="/api/placeholder/600/400" alt="VBCG 2" class="slide">
-                    <img src="/api/placeholder/600/400" alt="VBCG 3" class="slide">
-                    <img src="/api/placeholder/600/400" alt="VBCG 4" class="slide">
-                </div>
-                <div style="text-align: center; margin-top: 0.5rem;">
-                    <a href="#" style="color: #2563eb; text-decoration: none;">Read the paper</a>
-                </div>
-            </div>
+ 			<div class="project-card">
+				<h4>Patescibacteria Research</h4>
+				<p>This project investigated the adaptation of the recently defined, the largest superphylum Patescibacteria (also called CPR) to groundwater environments, driving their genome simplicity.</p>
+				<div class="slideshow-container">
+                   <img src="patescibacteria_1.jpeg" alt="VBCG 1" class="slide active">
+                    <img src="patescibacteria_2.jpeg" alt="VBCG 2" class="slide">
+                    <img src="patescibacteria_3.jpeg" alt="VBCG 3" class="slide">
+					<div class="slideshow-nav">
+						<button class="prev">&#10094;</button>
+						<button class="next">&#10095;</button>
+					</div>
+				</div>
+				<div style="text-align: center; margin-top: 0.5rem;">
+					<a href="https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-020-00825-w" style="color: #2563eb; text-decoration: none;">Read the paper</a>
+				</div>
+			</div>            
             
-            <div class="project-card">
-                <h4>ASAP 2</h4>
-                <p>ASAP 2 is a pipeline and web server to analyze marker gene amplicon sequencing data automatically and consistently.</p>
-                <div class="slideshow-container">
-                    <img src="/api/placeholder/600/400" alt="ASAP 2 1" class="slide active">
-                    <img src="/api/placeholder/600/400" alt="ASAP 2 2" class="slide">
-                    <img src="/api/placeholder/600/400" alt="ASAP 2 3" class="slide">
-                    <img src="/api/placeholder/600/400" alt="ASAP 2 4" class="slide">
-                </div>
-                <div style="text-align: center; margin-top: 0.5rem;">
-                    <a href="#" style="color: #2563eb; text-decoration: none;">Read the paper</a>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <h4>Patescibacteria Project</h4>
-                <p>This project investigates the adaptation of superphylum Patescibacteria to groundwater environments, driving their genome simplicity.</p>
-                <div class="slideshow-container">
-                    <img src="/api/placeholder/600/400" alt="Patescibacteria 1" class="slide active">
-                    <img src="/api/placeholder/600/400" alt="Patescibacteria 2" class="slide">
-                    <img src="/api/placeholder/600/400" alt="Patescibacteria 3" class="slide">
-                    <img src="/api/placeholder/600/400" alt="Patescibacteria 4" class="slide">
-                </div>
-                <div style="text-align: center; margin-top: 0.5rem;">
-                    <a href="#" style="color: #2563eb; text-decoration: none;">Read the paper</a>
-                </div>
-            </div>
-        </section>
+         </section>
 
         <section id="ongoing-projects">
             <h2>Ongoing Projects</h2>
             
             <div class="project-card">
-                <h3>ML-MSE</h3>
-                <p>A novel technology to isolate bacteria from soil environments using machine learning.</p>
-                <img src="/api/placeholder/600/400" alt="ML-MSE Schematic" style="width: 100%; height: auto;">
+                <h3>ML-MSE: Machine Learning-assisted Medium Sequenctial Enrichment</h3>
+                <p>A novel technology to isolate target bacteria from environmental samples using machine learning.</p>
             </div>
             
             <div class="project-card">
                 <h3>MetaRealm</h3>
                 <p>Using machine learning to predict prokaryotic, eukaryotic and virus sequences from metagenomic data for improved gut microbiome biomedical preprocessing.</p>
-                <img src="/api/placeholder/600/400" alt="MetaRealm Schematic" style="width: 100%; height: auto;">
+                <img src="metarealm.jpeg" alt="MetaRealm Schematic" style="display: block; margin-left: auto; margin-right: auto; width: 50%; height: auto;">
             </div>
             
             <div class="project-card">
-                <h3>SimL</h3>
+                <h3>RAPIDS - Rapid Alignment-free Prediction of Induced Database Similarity</h3>
                 <p>Using machine learning to predict sequence similarity without alignment, to revolutionize database search process.</p>
-                <img src="/api/placeholder/600/400" alt="SimL Schematic" style="width: 100%; height: auto;">
+                <img src="rapids.jpeg" alt="SimL Schematic" style="display: block; margin-left: auto; margin-right: auto; width: 50%; height: auto;">
+				<p><i><b>Comments and collaborations are very welcome!</></i></p>
             </div>
         </section>
+		
     </main>
 
     <footer>
         <div class="content-container">
-            <p>&copy; 2024 Renmao Tian. All rights reserved.</p>
+            <p>&copy; 2024 Renmao Tian. All rights reserved. <script type="text/javascript" src="//rf.revolvermaps.com/0/0/3.js?i=5fle0vvwowd&amp;b=0&amp;s=40&amp;m=2&amp;cl=ffffff&amp;co=0006ff&amp;cd=aa0000&amp;v0=60&amp;v1=60&amp;r=1" async="async"></script></p>
+			
         </div>
     </footer>
 
@@ -280,7 +340,7 @@
                 ['Environment', 15],
                 ['Data Analysis', 10],
                 ['Tool Development', 10],
-                ['Algorithms', 10],
+                ['Algorithms', 20],
                 ['Pipelines', 10]
             ];
 
@@ -304,6 +364,8 @@
         const slideshows = document.querySelectorAll('.slideshow-container');
         slideshows.forEach(slideshow => {
             const slides = slideshow.querySelectorAll('.slide');
+            const prevButton = slideshow.querySelector('.prev');
+            const nextButton = slideshow.querySelector('.next');
             let currentSlide = 0;
 
             function showSlide(n) {
@@ -312,7 +374,19 @@
                 slides[currentSlide].classList.add('active');
             }
 
-            setInterval(() => showSlide(currentSlide + 1), 3000);
+            function nextSlide() {
+                showSlide(currentSlide + 1);
+            }
+
+            function prevSlide() {
+                showSlide(currentSlide - 1);
+            }
+
+            nextButton.addEventListener('click', nextSlide);
+            prevButton.addEventListener('click', prevSlide);
+
+            // Optional: Auto-advance slides every 5 seconds
+            setInterval(nextSlide, 5000);
         });
     </script>
 </body>
