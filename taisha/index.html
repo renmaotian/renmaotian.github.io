@@ -124,24 +124,6 @@
     </a>
 
     <div class="container">
-        <div class="header">
-            <div class="title">
-                <i class="fas fa-book-open"></i> Tim学院
-            </div>
-            <div class="navigation">
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="nav-menu" id="navMenu">
-                    <a href="#chapters" class="nav-btn">
-                        <i class="fas fa-list"></i> 章节目录
-                    </a>
-                    <a href="#about" class="nav-btn">
-                        <i class="fas fa-info-circle"></i> 关于本站
-                    </a>
-                </div>
-            </div>
-        </div>
 
         <div class="main-content">
             <!-- Hero Section -->
@@ -616,33 +598,14 @@
     </div>
 
     <script>
-        // Smooth scrolling for navigation links
+        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
-                // Close mobile menu after clicking a link
-                const navMenu = document.getElementById('navMenu');
-                navMenu.classList.remove('show');
             });
-        });
-
-        // Mobile menu toggle
-        document.getElementById('mobileMenuToggle').addEventListener('click', function() {
-            const navMenu = document.getElementById('navMenu');
-            navMenu.classList.toggle('show');
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const navigation = document.querySelector('.navigation');
-            const navMenu = document.getElementById('navMenu');
-            
-            if (!navigation.contains(event.target) && navMenu.classList.contains('show')) {
-                navMenu.classList.remove('show');
-            }
         });
 
         // Add loading animation
