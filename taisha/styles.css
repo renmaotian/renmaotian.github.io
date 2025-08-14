@@ -18,6 +18,14 @@ body {
     overflow-x: hidden;
     max-width: 100vw;
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
 }
 
 .container {
@@ -1276,15 +1284,26 @@ body {
     }
     
     .homepage .hero-title {
-        font-size: 32px;
+        font-size: 28px;
+        line-height: 1.2;
+        word-break: keep-all;
     }
     
     .homepage .hero-subtitle {
-        font-size: 18px;
+        font-size: 16px;
+        line-height: 1.3;
     }
     
     .homepage .hero-description {
-        font-size: 14px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    
+    .homepage .hero-quote {
+        font-size: 15px;
+        line-height: 1.4;
+        padding: 15px;
+        margin: 20px 0;
     }
 }
 
@@ -1309,26 +1328,29 @@ body {
     }
 
     .hero-title {
-        font-size: 28px;
+        font-size: 32px;
         margin-bottom: 15px;
+        line-height: 1.2;
+        word-break: keep-all;
     }
 
     .hero-subtitle {
-        font-size: 14px;
+        font-size: 18px;
         margin-bottom: 18px;
+        line-height: 1.3;
     }
 
     .hero-description {
-        font-size: 16px;
+        font-size: 17px;
         margin-bottom: 20px;
-        line-height: 1.6;
+        line-height: 1.5;
     }
 
     .hero-quote {
-        font-size: 16px;
+        font-size: 18px;
         padding: 20px;
         margin: 25px 0;
-        line-height: 1.5;
+        line-height: 1.4;
     }
 
     .homepage .toc-section {
@@ -1596,6 +1618,49 @@ body {
     }
 }
 
+/* Enhanced mobile touch targets */
+@media (max-width: 768px) {
+    .homepage .chapter-link {
+        min-height: 52px !important;
+        touch-action: manipulation;
+    }
+    
+    .nav-link {
+        min-height: 52px !important;
+        touch-action: manipulation;
+    }
+    
+    .mobile-menu-toggle {
+        min-width: 52px !important;
+        min-height: 52px !important;
+        touch-action: manipulation;
+    }
+}
+
+/* Fix text selection and readability on mobile */
+@media (max-width: 480px) {
+    * {
+        -webkit-user-select: text;
+        user-select: text;
+    }
+    
+    .homepage .hero-title,
+    .homepage .hero-subtitle,
+    .homepage .hero-description,
+    .homepage .hero-quote {
+        text-rendering: optimizeLegibility;
+    }
+    
+    /* Prevent zoom on input focus */
+    input[type="text"],
+    input[type="email"],
+    input[type="search"],
+    textarea,
+    select {
+        font-size: 16px !important;
+    }
+}
+
 /* Override logo icon to use book icon from index.html */
 .logo-icon i::before {
     content: "\f518" !important;
@@ -1760,6 +1825,9 @@ body {
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease;
+        z-index: 1001;
+        max-height: 70vh;
+        overflow-y: auto;
     }
     
     .header-nav.active {
@@ -1770,6 +1838,11 @@ body {
     
     .mobile-menu-toggle {
         display: block;
+        min-width: 48px;
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .nav-link {
@@ -1779,6 +1852,10 @@ body {
         border-radius: 12px;
         margin: 5px 0;
         font-size: 18px;
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .homepage .container {
@@ -1801,5 +1878,39 @@ body {
     
     .homepage .container {
         padding-top: 65px;
+    }
+}
+
+/* Visitor Map Widget Mobile Styles */
+.visitor-map-widget {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 30px;
+}
+
+.visitor-map-widget img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 480px) {
+    .visitor-map-widget {
+        padding: 15px 10px;
+        margin-top: 20px;
+    }
+    
+    .visitor-map-widget img {
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .visitor-map-widget {
+        padding: 18px 15px;
+        margin-top: 25px;
     }
 }
