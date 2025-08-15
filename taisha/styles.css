@@ -393,6 +393,7 @@ body {
     .script-content {
         font-size: 18px;
         line-height: 1.5;
+		margin-bottom: 40px;
     }
 
     .script-title {
@@ -1320,6 +1321,12 @@ body {
         line-height: 1.4;
         padding: 15px;
         margin: 10px 0;
+    }
+	
+    .script-content {
+        font-size: 18px;
+        line-height: 1.5;
+		margin-bottom: 40px;
     }
 
 }
