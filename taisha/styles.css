@@ -1311,7 +1311,7 @@ body {
     }
     
     .homepage .hero-description {
-        font-size: 21px;
+        font-size: 15px;
         line-height: 1.5;
     }
     
@@ -1362,7 +1362,7 @@ body {
     }
 
     .hero-description {
-        font-size: 64px;
+        font-size: 32px;
         margin-bottom: 20px;
         line-height: 1.5;
     }
