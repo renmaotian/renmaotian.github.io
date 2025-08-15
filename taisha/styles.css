@@ -281,7 +281,7 @@ body {
 /* Mobile First - Base styles for mobile devices */
 @media (max-width: 480px) {
     body {
-        font-size: 10.5px;
+        font-size: 14px;
         overflow-y: auto;
         position: relative;
         -webkit-text-size-adjust: none;
@@ -301,7 +301,7 @@ body {
     }
 
     .title {
-        font-size: 17px;
+        font-size: 22.5px;
         order: 1;
         flex: 1;
         text-align: left;
@@ -317,14 +317,14 @@ body {
 
     .btn {
         padding: 9px 12px;
-        font-size: 8px;
+        font-size: 10.5px;
         min-height: 33px;
         border-radius: 16.5px;
     }
 
     .slide-counter {
         padding: 6px 9px;
-        font-size: 8px;
+        font-size: 10.5px;
         border-radius: 15px;
     }
 
@@ -339,37 +339,37 @@ body {
     }
 
     .slide-icon {
-        font-size: 51px;
+        font-size: 67.5px;
         margin-bottom: 22.5px;
     }
 
     .slide h1 {
-        font-size: 24px;
+        font-size: 31.5px;
         margin-bottom: 17.25px;
     }
 
     .slide h2 {
-        font-size: 19px;
+        font-size: 24.75px;
         margin-bottom: 17.25px;
     }
 
     .slide h3 {
-        font-size: 15px;
+        font-size: 20.25px;
         margin-bottom: 13.5px;
     }
 
     .slide p {
-        font-size: 13.5px;
+        font-size: 18px;
         line-height: 1.6;
         margin-bottom: 13.5px;
     }
 
     .emphasis {
-        font-size: 17px;
+        font-size: 22.5px;
     }
 
     .quote {
-        font-size: 15px;
+        font-size: 20.25px;
         padding: 17.25px;
         margin: 17.25px 0;
         border-radius: 9px;
@@ -378,7 +378,7 @@ body {
     .key-points li {
         margin: 13.5px 0;
         padding: 17.25px 22.5px;
-        font-size: 13.5px;
+        font-size: 18px;
         border-radius: 11.25px;
     }
 
@@ -391,12 +391,12 @@ body {
     }
 
     .script-content {
-        font-size: 13.5px;
+        font-size: 18px;
         line-height: 1.5;
     }
 
     .script-title {
-        font-size: 13.5px;
+        font-size: 18px;
         margin-bottom: 11.25px;
         gap: 11.25px;
     }
@@ -418,12 +418,12 @@ body {
     }
 
     .title {
-        font-size: 24px;
+        font-size: 31.5px;
     }
 
     .btn {
         padding: 7.5px 13.5px;
-        font-size: 8px;
+        font-size: 11.25px;
         min-height: 36px;
     }
 
@@ -437,37 +437,37 @@ body {
     }
 
     .slide-icon {
-        font-size: 67.5px;
+        font-size: 90px;
         margin-bottom: 28.5px;
     }
 
     .slide h1 {
-        font-size: 30px;
+        font-size: 40.5px;
         margin-bottom: 22.5px;
     }
 
     .slide h2 {
-        font-size: 25px;
+        font-size: 33.75px;
         margin-bottom: 22.5px;
     }
 
     .slide h3 {
-        font-size: 20px;
+        font-size: 27px;
         margin-bottom: 18px;
     }
 
     .slide p {
-        font-size: 15px;
+        font-size: 20.25px;
         line-height: 1.7;
         margin-bottom: 18px;
     }
 
     .emphasis {
-        font-size: 20px;
+        font-size: 27px;
     }
 
     .quote {
-        font-size: 17px;
+        font-size: 22.5px;
         padding: 22.5px;
         margin: 22.5px 0;
     }
@@ -475,7 +475,7 @@ body {
     .key-points li {
         margin: 18px 0;
         padding: 20.25px 28.5px;
-        font-size: 15px;
+        font-size: 20.25px;
     }
 
     .script-area {
@@ -487,7 +487,7 @@ body {
     }
 
     .script-content {
-        font-size: 15px;
+        font-size: 20.25px;
     }
 
     .main-content {
@@ -819,16 +819,16 @@ body {
     .logo-icon {
         width: 20px;
         height: 20px;
-        font-size: 7px;
+        font-size: 9px;
     }
 
     .logo-tim {
-        font-size: 7.5px;
+        font-size: 10px;
         letter-spacing: 0.5px;
     }
 
     .logo-academy {
-        font-size: 9px;
+        font-size: 12px;
     }
 }
 
@@ -842,16 +842,16 @@ body {
     .logo-icon {
         width: 23px;
         height: 23px;
-        font-size: 7.5px;
+        font-size: 10px;
     }
 
     .logo-tim {
-        font-size: 9px;
+        font-size: 12px;
         letter-spacing: 0.75px;
     }
 
     .logo-academy {
-        font-size: 10px;
+        font-size: 13px;
     }
 }
 
@@ -1070,7 +1070,7 @@ body {
     }
     
     .homepage .chapter-icon {
-        font-size: 8px;
+        font-size: 11px;
     }
     
     .homepage .chapter-title {
@@ -1300,30 +1300,30 @@ body {
     }
     
     .homepage .hero-title {
-        font-size: 36px;
+        font-size: 48px;
         line-height: 1.2;
         word-break: keep-all;
     }
     
     .homepage .hero-subtitle {
-        font-size: 24px;
+        font-size: 32px;
         line-height: 1.3;
     }
     
     .homepage .hero-description {
-        font-size: 21px;
+        font-size: 28px;
         line-height: 1.5;
     }
     
     .homepage .hero-quote {
-        font-size: 16.5px;
+        font-size: 22px;
         line-height: 1.4;
         padding: 15px;
         margin: 20px 0;
     }
     
     .hero-icon {
-        font-size: 75px;
+        font-size: 100px;
         margin-bottom: 10px;
     }
 }
@@ -1344,31 +1344,31 @@ body {
     }
 
     .hero-icon {
-        font-size: 67.5px;
+        font-size: 90px;
         margin-bottom: 8px;
     }
 
     .hero-title {
-        font-size: 84px;
+        font-size: 112px;
         margin-bottom: 15px;
         line-height: 1.2;
         word-break: keep-all;
     }
 
     .hero-subtitle {
-        font-size: 54px;
+        font-size: 72px;
         margin-bottom: 18px;
         line-height: 1.3;
     }
 
     .hero-description {
-        font-size: 48px;
+        font-size: 64px;
         margin-bottom: 20px;
         line-height: 1.5;
     }
 
     .hero-quote {
-        font-size: 36px;
+        font-size: 48px;
         padding: 20px;
         margin: 25px 0;
         line-height: 1.4;
@@ -1379,7 +1379,7 @@ body {
     }
 
     .homepage .toc-title {
-        font-size: 15px;
+        font-size: 20px;
         margin-bottom: 18px;
         gap: 8px;
     }
@@ -1394,14 +1394,14 @@ body {
     }
 
     .homepage .group-title {
-        font-size: 12px;
+        font-size: 16px;
         margin-bottom: 12px;
         gap: 8px;
     }
 
     .homepage .chapter-link {
         padding: 10px 12px;
-        font-size: 10.5px;
+        font-size: 14px;
         gap: 8px;
         min-height: 48px;
         align-items: center;
@@ -1410,7 +1410,7 @@ body {
     .homepage .chapter-number {
         padding: 6px 10px;
         min-width: 40px;
-        font-size: 9px;
+        font-size: 12px;
         border-radius: 8px;
     }
 
@@ -1420,7 +1420,7 @@ body {
     }
 
     .homepage .principles-title {
-        font-size: 13.5px;
+        font-size: 18px;
         margin-bottom: 20px;
     }
 
@@ -1431,12 +1431,12 @@ body {
 
     .homepage .principle-item {
         padding: 15px;
-        font-size: 10.5px;
+        font-size: 14px;
         gap: 12px;
     }
 
     .homepage .principle-icon {
-        font-size: 12px;
+        font-size: 16px;
         min-width: 32px;
     }
 }
@@ -1475,27 +1475,27 @@ body {
     }
 
     .homepage .hero-icon {
-        font-size: 41px;
+        font-size: 55px;
         margin-bottom: 8px;
     }
 
     .homepage .hero-title {
-        font-size: 31.5px;
+        font-size: 42px;
         margin-bottom: 18px;
     }
 
     .homepage .hero-subtitle {
-        font-size: 21px;
+        font-size: 28px;
         margin-bottom: 24px;
     }
 
     .homepage .hero-description {
-        font-size: 13.5px;
+        font-size: 18px;
         margin-bottom: 18px;
     }
 
     .homepage .hero-quote {
-        font-size: 16.5px;
+        font-size: 22px;
         padding: 22px;
         margin: 25px 0;
     }
@@ -1505,7 +1505,7 @@ body {
     }
 
     .homepage .toc-title {
-        font-size: 21px;
+        font-size: 28px;
         margin-bottom: 25px;
     }
 
@@ -1681,32 +1681,32 @@ body {
     input[type="search"],
     textarea,
     select {
-        font-size: 12px !important;
+        font-size: 16px !important;
     }
     
     /* Balanced hero section font sizes for mobile */
     .hero-title, .homepage .hero-title {
-        font-size: 42px !important;
+        font-size: 56px !important;
         max-width: 100%;
         word-wrap: break-word;
     }
     
     .hero-subtitle, .homepage .hero-subtitle {
-        font-size: 27px !important;
+        font-size: 36px !important;
     }
     
     .hero-description, .homepage .hero-description {
-        font-size: 24px !important;
+        font-size: 32px !important;
     }
     
     .hero-quote, .homepage .hero-quote {
-        font-size: 18px !important;
+        font-size: 24px !important;
         padding: 15px !important;
         line-height: 1.4 !important;
     }
     
     .hero-icon, .homepage .hero-icon {
-        font-size: 67.5px !important;
+        font-size: 90px !important;
     }
 }
 
@@ -1758,11 +1758,11 @@ body {
 /* Mobile responsive for page title */
 @media (max-width: 768px) {
     .page-title-text {
-        font-size: 24px;
+        font-size: 32px;
     }
     
     .page-title-icon {
-        font-size: 21px;
+        font-size: 28px;
     }
     
     .page-title {
@@ -1773,11 +1773,11 @@ body {
 
 @media (max-width: 480px) {
     .page-title-text {
-        font-size: 36px;
+        font-size: 48px;
     }
     
     .page-title-icon {
-        font-size: 30px;
+        font-size: 40px;
     }
     
     .page-title {
